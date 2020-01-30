@@ -33,11 +33,6 @@ def canvas(with_attribution=True):
         quote += "\n\t- Adapted from Henry David Thoreau"
     return quote
 
-def calculate_distance(rA, rB):
-    d=(rA-rB)
-    dist=np.linalg.norm(d)
-    return dist
-
 def open_pdb(f_loc):
     with open(f_loc) as f:
         data = f.readlines()
@@ -50,18 +45,6 @@ def open_pdb(f_loc):
             c.append(c2)
     coords = np.array(c)
     return sym, coords
-
-atomic_weights = {
-    'H': 1.00784,
-    'C': 12.0107,
-    'N': 14.0067,
-    'O': 15.999,
-    'P': 30.973762,
-    'F': 18.998403,
-    'Cl': 35.453,
-    'Br': 79.904,
-}
-
 
 def open_xyz(file_location):
     
@@ -117,16 +100,6 @@ plt.axis('square')
 
 return ax
 
-def calculate_angle(rA, rB, rC, degrees=False):
-    AB = rB - rA
-    BC = rB - rC
-    theta=np.arccos(np.dot(AB, BC)/(np.linalg.norm(AB)*np.linalg.norm(BC)))
-    
-    if degrees:
-        return np.degrees(theta)
-    else:
-        return theta
-
 def bond_histogram(bond_list, save_location=None, dpi=300, graph_min=0, graph_max=2):
     
     lengths = []
@@ -163,18 +136,6 @@ def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
                 bonds[(atom1, atom2)] = distance
 
 return bonds
-
-atom_colors = {
-    'H': 'white',
-    'C': '#D3D3D3',
-    'N': '#add8e6',
-    'O': 'red',
-    'P': '#FFA500',
-    'F': '#FFFFE0',
-    'Cl': '#98FB98',
-    'Br': '#F4A460',
-    'S': 'yellow'
-}
 
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
