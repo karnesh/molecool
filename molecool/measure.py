@@ -1,6 +1,9 @@
 """
     This module is for functions which perform measurements.
     """
+
+import numpy as np
+
 def calculate_distance(rA, rB):
     dist_vec = (rA - rB)
     distance = np.linalg.norm(dist_vec)
