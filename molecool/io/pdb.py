@@ -11,7 +11,6 @@ def open_pdb(file_location):
     for line in data:
         if 'ATOM' in line[0:6] or 'HETATM' in line[0:6]:
             symbols.append(line[76:79].strip())
-            
             coords = [float(x) for x in line[30:55].split()]
             coordinates.append(coords)
 
