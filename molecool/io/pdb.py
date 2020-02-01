@@ -14,7 +14,7 @@ def open_pdb(file_location):
             coords = [float(x) for x in line[30:55].split()]
             coordinates.append(coords)
 
-coords = np.array(coordinates)
-symbols = np.array(symbols)
+    coords = np.array(coordinates)
+    symbols = np.array(symbols)
 
-return symbols, coords
+    return symbols, coords
