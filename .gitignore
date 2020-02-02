@@ -107,3 +107,7 @@ ENV/
 # temporary data files
 *.in
 *.out
+
+# environment files
+.travis.yml
+.lgtm.yml
