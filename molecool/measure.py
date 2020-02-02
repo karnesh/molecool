@@ -1,9 +1,9 @@
 """
     This module is for functions which perform measurements.
-    """
+"""
 
 import numpy as np
-
+from .atom_data import atomic_weights
 
 def calculate_distance(rA, rB):
     """

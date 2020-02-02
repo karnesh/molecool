@@ -1,8 +1,8 @@
 """
     Data used for the rest of the package.
-    """
+"""
 
-atom_weights = {
+atomic_weights = {
     'H': 1.00784,
     'C': 12.0107,
     'N': 14.0067,
@@ -22,4 +22,5 @@ atom_colors = {
     'F': '#FFFFE0',
     'Cl': '#98FB98',
     'Br': '#F4A460',
+    'S': 'yellow'
 }
