@@ -108,6 +108,3 @@ ENV/
 *.in
 *.out
 
-# environment files
-.travis.yml
-.lgtm.yml
