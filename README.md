@@ -5,9 +5,9 @@ molecool
 
 A Python package for analyzing and visualizing xyz files. For MolSSI Python Package development workshop.
 
-This repository is currently under development. To do a developmental install, download this repository and type
+To do a install, download this repository and type
 
-`pip install -e .`
+`pip install .`
 
 in the repository directory.
 
