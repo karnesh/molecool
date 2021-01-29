@@ -1,5 +1,5 @@
 """
-    Unit and regression test for the measure module.
+    Unit test for the measure module.
     """
 
 # Import package, test suite, and other packages as needed
